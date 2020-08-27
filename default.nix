@@ -7,16 +7,16 @@ let
 in with nixpkgs;
 buildGoModule rec {
   pname = "turbo-geth";
-  version = "2020.07.01-alpha";
+  version = "2020.08.04-alpha";
 
   src = fetchFromGitHub {
     owner = "ledgerwatch";
     repo = pname;
     rev = version;
-    sha256 = "064arlvvvq15m0y1nf9a0mplrlfxsc0v3vmv8sl5262pknlvfyk3";
+    sha256 = "0mandbw06h4pigdk91vnw402agq5ynsjxmgkmnx3s9dqr6fhaimd";
   };
 
-  modSha256 = "1yclsimwskyqy9h7gdw60frqbm5fpp32h8xvsvli4nghkpnl175n";
+  modSha256 = "1fpnzhhy16kn27lvl8bbif080q05ql71znmdlq9ffddjlb8rwaad";
 
 
 subPackages = [
